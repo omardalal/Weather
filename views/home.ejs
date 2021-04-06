@@ -1,0 +1,121 @@
+<%- include("partials/header") %>
+<img src="bg (<%=bg%>).jpg" class="position-fixed" id="bg">
+<div id="search-container" class="container d-flex">
+    <div id="left-search" class="container d-flex">
+        <label class="mx-auto my-auto">City Name</label>
+    </div>
+    <div id="right-search" class="container d-flex">
+        <form action="/search" method="POST" class="w-100">
+            <input type="text" autocomplete="off" name="city" placeholder="e.g: New York City">
+        </form>
+    </div>
+</div>
+
+<div id="weather-container" class="container d-flex justify-content-center text-white">
+    <div id="left-weather" class="container d-flex m-0">
+        <div class="container left-info">
+            <img src="<%=weatherDayData.img%>.svg" class="cond-img">
+            <br><br>
+            <label class="cond-text"><%=weatherDayData.condition%></label>
+            <br><br>
+            <label class="cond-city"><%=weatherDayData.city%>, <%=weatherDayData.country%></label>
+            <br><br>
+            <label class="cond-deg"><%=weatherDayData.temp%>°C</label>
+            <br><br>
+            <label class="date"><%=weatherDayData.date%></label>
+        </div>
+        <div class="container right-info">
+            <label class="info-title">Humidity</label>
+            <br>
+            <label class="info-data"><%=weatherDayData.humidity%>%</label>
+            <br><br>
+            <label class="info-title">Air Pressure</label>
+            <br>
+            <label class="info-data"><%=weatherDayData.pressure%> PS</label>
+            <br><br>
+            <label class="info-title">Feels Like</label>
+            <br>
+            <label class="info-data"><%=weatherDayData.feel%>°C</label>
+            <br><br>
+            <label class="info-title">Wind Speed</label>
+            <br>
+            <label class="info-data"><%=weatherDayData.wind%> Km/h</label>
+        </div>
+    </div>
+    <div id="right-weather" class="container d-flex m-0">
+        <div class="container left-info">
+            <img src="<%=weatherNightData.img%>.svg" class="cond-img">
+            <br><br>
+            <label class="cond-text"><%=weatherNightData.condition%></label>
+            <br><br>
+            <label class="cond-city"><%=weatherNightData.city%>, <%=weatherDayData.country%></label>
+            <br><br>
+            <label class="cond-deg"><%=weatherNightData.temp%>°C</label>
+            <br><br>
+            <a href="https://openweathermap.org/current" class="text-light"><label class="date">OpenWeatherMap.org</label></a>
+        </div>
+        <div class="container right-info">
+            <label class="info-title">Humidity</label>
+            <br>
+            <label class="info-data"><%=weatherNightData.humidity%>%</label>
+            <br><br>
+            <label class="info-title">Air Pressure</label>
+            <br>
+            <label class="info-data"><%=weatherNightData.pressure%> PS</label>
+            <br><br>
+            <label class="info-title">Feels Like</label>
+            <br>
+            <label class="info-data"><%=weatherNightData.feel%>°C</label>
+            <br><br>
+            <label class="info-title">Wind Speed</label>
+            <br>
+            <label class="info-data"><%=weatherNightData.wind%> Km/h</label>
+        </div>
+    </div>
+</div>
+<div class="d-flex text-white justify-content-center darkBlack" id="extended-container">
+    <% for (var i=0; i<4; i++) { %>
+        <% var classVal="lightBlack"; %>
+        <% if (i%2==0) {%>
+            <% classVal="darkBlack"; %>
+        <%}%>
+        <div class="text-center m-0 h-100 d-flex align-items-center <%=classVal%> ext-weather" style="padding: 100px 0">
+            <img src="<%=weatherData[i].img%>.svg" class="cond-img mx-auto my-3">
+            <label class="cond-text my-3"><%=weatherData[i].condition%></label>
+            <label class="cond-city my-3"><%=weatherDayData.city%>, <%=weatherDayData.country%></label>
+            <label class="cond-deg my-3"><%=weatherData[i].temp%>°C</label>
+            <label class="lead my-3"><%=weatherData[i].date%></label>
+            <br><br><br><br>
+            <div class="d-flex justify-content-between w-85">
+                <label class="ext-info-title">Humidity</label>
+                <label class="ext-info-data"><%=weatherData[i].humidity%>%</label>
+            </div>
+
+            <div class="d-flex justify-content-between w-85">
+                <label class="ext-info-title">Air Pressure</label>
+                <label class="ext-info-data"><%=weatherData[i].pressure%> PS</label>
+            </div>
+
+            <div class="d-flex justify-content-between w-85">
+                <label class="ext-info-title">Feels Like</label>
+                <label class="ext-info-data"><%=weatherData[i].feel%>°C</label>
+            </div>
+
+            <div class="d-flex justify-content-between w-85">
+                <label class="ext-info-title">Wind Speed</label>
+                <label class="ext-info-data"><%=weatherData[i].wind%> Km/h</label>
+            </div>
+        </div>
+    <%}%>
+</div>
+
+<script type="text/javascript">
+    $('input').focusin(function() {
+        $(this).attr('placeholder', '');
+    });
+    $('input').focusout(function() {
+        $(this).attr('placeholder', 'e.g: New York City');
+    });
+</script>
+
+<%- include("partials/footer") %>

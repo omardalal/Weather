@@ -1,0 +1,36 @@
+<svg id="Drizzle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66.969" height="59.781" viewBox="0 0 66.969 59.781">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #daecf9;
+        filter: url(#filter);
+      }
+
+      .cls-3 {
+        fill: #00b4f1;
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="307.969" y="230" width="35.969" height="23" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="307.969" y="230" width="35.969" height="23" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzUuOTY5IiBoZWlnaHQ9IjIzIiB2aWV3Qm94PSIwIDAgMzUuOTY5IDIzIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjYuNDg0IiB5MT0iMjMiIHgyPSIyOS40ODQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZDFlOGY4Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2UxZWVmOSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMzUuOTY5IiBoZWlnaHQ9IjIzIi8+Cjwvc3ZnPgo="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="284.25" y="260.969" width="45.406" height="15.75" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="284.25" y="260.969" width="45.406" height="15.75" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDUuNDA2IiBoZWlnaHQ9IjE1Ljc1IiB2aWV3Qm94PSIwIDAgNDUuNDA2IDE1Ljc1Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjE0LjgyOCIgeTE9IjE1Ljc1IiB4Mj0iMzAuNTc4IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwYWVlZiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzMGM1ZjQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjQ1LjQwNiIgaGVpZ2h0PSIxNS43NSIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="cloud-large" class="cls-1" d="M323.243,252.956a10.544,10.544,0,1,0,0-21.085c-0.037,0-.072,0-0.11.006a17.191,17.191,0,0,0-32.627-5.01c-0.085,0-.169-0.007-0.254-0.007a13.05,13.05,0,1,0,0,26.1" transform="translate(-276.969 -216.938)"/>
+  <path id="cloud-small-dark" class="cls-2" d="M337.18,252.991a6.728,6.728,0,1,0,0-13.456c-0.023,0-.046,0-0.069,0a10.823,10.823,0,0,0-20.6-3.2c-0.054,0-.107,0-0.16,0a8.328,8.328,0,1,0,0,16.655" transform="translate(-276.969 -216.938)"/>
+  <path id="rain-05" class="cls-3" d="M286.263,269.734a2.052,2.052,0,0,1-1-.262,1.915,1.915,0,0,1-.737-2.663l2.906-4.873a2.049,2.049,0,0,1,2.751-.714,1.917,1.917,0,0,1,.737,2.663l-2.906,4.874A2.029,2.029,0,0,1,286.263,269.734Zm16.22,0a2.052,2.052,0,0,1-1-.262,1.917,1.917,0,0,1-.737-2.663l2.906-4.873a2.049,2.049,0,0,1,2.751-.714,1.915,1.915,0,0,1,.737,2.663l-2.906,4.874A2.028,2.028,0,0,1,302.483,269.734Zm16.221,0a2.047,2.047,0,0,1-1-.262,1.916,1.916,0,0,1-.738-2.663l2.907-4.873a2.048,2.048,0,0,1,2.75-.714,1.917,1.917,0,0,1,.738,2.663l-2.906,4.874A2.029,2.029,0,0,1,318.7,269.734Zm-27.408,7a2.055,2.055,0,0,1-1-.261,1.917,1.917,0,0,1-.738-2.663l2.906-4.874a2.049,2.049,0,0,1,2.751-.713,1.916,1.916,0,0,1,.738,2.663l-2.906,4.873A2.027,2.027,0,0,1,291.3,276.732Zm16.725,0a2.062,2.062,0,0,1-1-.261,1.915,1.915,0,0,1-.737-2.663l2.906-4.874a2.048,2.048,0,0,1,2.751-.713,1.917,1.917,0,0,1,.737,2.663l-2.906,4.873A2.027,2.027,0,0,1,308.021,276.732Zm16.723,0a2.062,2.062,0,0,1-1.005-.261,1.916,1.916,0,0,1-.737-2.663l2.906-4.874a2.048,2.048,0,0,1,2.751-.713,1.916,1.916,0,0,1,.737,2.663l-2.906,4.873A2.027,2.027,0,0,1,324.744,276.732Z" transform="translate(-276.969 -216.938)"/>
+</svg>
